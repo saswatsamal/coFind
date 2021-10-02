@@ -15,5 +15,13 @@ const userData = [
         linkedinID: "ankit-raj-biswal-9705051a4",
         twitterID: "AnkitRajBiswal4",
     },
+    {
+        userName: "Aditya Arpan Sahoo",
+        userImage: "https://avatars.githubusercontent.com/u/75975428?v=4",
+        userDesignation: "Web Developer",
+        userBio:"A student developer who always opens to learn and explore new technologies. Loves hackathons.",
+        linkedinID: "arpan-aditya",
+        twitterID: "adityaa_sahoo",
+    },
     
 ];
