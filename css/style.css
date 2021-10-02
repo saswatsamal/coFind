@@ -168,11 +168,12 @@ transform: scale(1.1);
 }
 
 .profile-card .profile-image img {
-  max-width: 100%;
+  width:100px;
+  height:100px;
   vertical-align: top;
   position: relative;
   border-radius: 50%;
-  max-width: 40%;
+
 }
 
 .profile-card figcaption {
@@ -180,10 +181,10 @@ transform: scale(1.1);
 }
 
 .profile-card h3 {
-  font-family: 'Oswald';
+  font-family: 'Poppins';
   text-transform: uppercase;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 20px;
   margin: 3px 0;
 }
