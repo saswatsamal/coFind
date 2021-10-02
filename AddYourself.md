@@ -28,5 +28,15 @@ It is very simple to add yourself to the website, just follow the mentioned step
       - `linkedinID`: Provide your LinkedIn ID only. You can find your ID -> [linkedin.com/in/saswatsamal](https://linkedin.com/in/saswatsamal) -> here **saswatsamal** is the LinkedIn ID.
       - `twitterID`: Add your Twitter ID
 
+- You need to add these below the other one which is separared by a comma. 
+```javascript
+{
+//details of user 1
+},
+{
+//details of user 2
+},
+```
+
 - Cool 🎉, now create a Pull Request and wait for your PR to get merged! 😍
 - After successful merging of your PR, you can find yourself at [here](https://co-find.netlify.app/meet.html)! 🤩🚀
