@@ -40,7 +40,7 @@ const userData = [
         linkedinID: "saswat-mohanty-3460321b4",
         twitterID: "Saswat7101",
     },
-         {
+    {
         userName: "Abhijeet Anand",
         userImage: "https://avatars.githubusercontent.com/u/64329744?s=400&u=89f726ffa3a481e37f49e82c7e521ac308482efe&v=4",
         userDesignation: "Angular Developer",
