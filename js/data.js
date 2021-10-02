@@ -39,5 +39,13 @@ const userData = [
         userBio:"A student developer, eager to learn new stuffs, meet new people. Big time food lover",
         linkedinID: "saswat-mohanty-3460321b4",
         twitterID: "Saswat7101",
+    },
+         {
+        userName: "Abhijeet Anand",
+        userImage: "https://avatars.githubusercontent.com/u/64329744?s=400&u=89f726ffa3a481e37f49e82c7e521ac308482efe&v=4",
+        userDesignation: "Angular Developer",
+        userBio:"A budding Web Developer and an Open Source Enthusiast, who is obsessed with the idea of improving myself with THE POWER OF COMMUNITY",
+        linkedinID: "abhijeet-anand-666123200",
+        twitterID: "abhijeet_500",
     }
 ];
