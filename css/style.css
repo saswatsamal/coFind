@@ -223,10 +223,6 @@ transform: scale(1.1);
   padding: 5px;
 }
 
-.footer-text{
-  margin-top:1.8%;
-}
-
 .footer-text a{
   color: #ffffff;
   text-decoration: underline;
@@ -240,7 +236,7 @@ transform: scale(1.1);
 
 
 /* Media Queries */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1070px) {
   .navbar-logo{
     display: none;
   }
@@ -258,6 +254,7 @@ transform: scale(1.1);
   }
   .footer{
     padding-bottom: 10px;
+    position: relative;
   }
   .footer-text{
     font-weight: 500;
