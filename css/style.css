@@ -147,15 +147,17 @@ transform: scale(1.1);
   position: relative;
   display: inline-block;
   overflow: hidden;
-  margin: 10px;
-  min-width: 250px;
-  max-width: 310px;
+  margin: 15px;
+  min-width: 230px;
+  max-width: 250px;
   width: 100%;
+  max-height:280px;
   background-color: #ffffff;
   color: #2B2B2B;
   text-align: center;
   font-size: 16px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius:10px;
 }
 
 .profile-card * {
@@ -164,7 +166,7 @@ transform: scale(1.1);
 }
 
 .profile-card .profile-image {
-  padding: 15% 10% 0;
+  padding: 6% 5% 0;
 }
 
 .profile-card .profile-image img {
@@ -183,13 +185,14 @@ transform: scale(1.1);
 .profile-card h3 {
   font-family: 'Poppins';
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 20px;
   margin: 3px 0;
 }
 
 .profile-card h5 {
+  font-size:10px;
   font-weight: 400;
   margin: 0;
   text-transform: uppercase;
@@ -201,7 +204,7 @@ transform: scale(1.1);
   color: #999;
   display: inline-block;
   margin-right: 5px;
-  font-size: 1em;
+  font-size: 0.5px;
 }
 
 .profile-card .icons i:hover {
@@ -212,7 +215,13 @@ transform: scale(1.1);
   text-decoration: none;
 }
 
-
+.profile-card .icons img{
+  height:18%;
+  width:18%;
+}
+.profile-card p{
+  font-size:12px;
+}
 .footer{
   width: 100%;
   height: 28px;
