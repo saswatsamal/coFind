@@ -11,10 +11,6 @@ var square = document.createElement("div");
                 square.style.width = `${Math.random()}em`;
     square.style.height = square.style.width;
 
-// const { BlurOnTwoTone } = require("@material-ui/icons");
-
-// const { Search } = require("@material-ui/icons");
-
       squares.push(square);
       document.body.append(square);
   }
@@ -119,6 +115,8 @@ function userCard(user) {
   </div>
 `;
 }
+
+//Search
 let userRender = [];
 document.getElementById("app").innerHTML = `
 ${userData.map(userCard).join("")}
@@ -141,9 +139,11 @@ btn.addEventListener("click", (e) => {
 function SearchFxn() {
   userRender = [];
   userData.map((user, i) => {
+    let tag = user.userDesignation;
     let name = user.userName;
     name = name.toLowerCase();
-    if (name.includes(inputText)) {
+    tag = tag.toLowerCase();
+    if (name.includes(inputText) || tag.includes(inputText)) {
       userRender = [...userRender, user];
       userRender = [...new Set(userRender)];
     }
