@@ -16,6 +16,15 @@ const userData = [
         twitterID: "AnkitRajBiswal4",
     },
     {
+        userName: "Aniruddha Bagal",
+        userImage: "https://avatars.githubusercontent.com/u/64460474?v=4",
+        userDesignation: "Web Developer",
+        userBio:"A Enthusiatic Programmer who loves Food! Love learning about new and upcoming web technologies and implement them in work!",
+        linkedinID: "Aniruddha-Bagal",
+        twitterID: "AniruddhaBagal",
+
+    },
+    {
         userName: "Aditya Arpan Sahoo",
         userImage: "https://avatars.githubusercontent.com/u/75975428?v=4",
         userDesignation: "Web Developer",
