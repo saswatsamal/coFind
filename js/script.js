@@ -11,6 +11,10 @@ var square = document.createElement("div");
                 square.style.width = `${Math.random()}em`;
     square.style.height = square.style.width;
 
+// const { BlurOnTwoTone } = require("@material-ui/icons");
+
+// const { Search } = require("@material-ui/icons");
+
       squares.push(square);
       document.body.append(square);
   }
@@ -36,10 +40,9 @@ var square = document.createElement("div");
                 );
             });
 
+// -----------------------------------------------------------------------------------//
 
-//-----------------------------------------------------------------------------------//
-
-//Typing Effect
+// Typing Effect
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -90,7 +93,7 @@ window.onload = function() {
         new TxtType(elements[i], JSON.parse(toRotate), period);
       }
   }
-  // INJECT CSS
+// INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
@@ -98,7 +101,6 @@ window.onload = function() {
 };
 
 //-----------------------------------------------------------------------------------//
-
 
 //User Data Display
 function userCard(user) {
@@ -113,11 +115,40 @@ function userCard(user) {
       <a href="https://twitter.com/${user.twitterID}" targert="blank"> <img src="https://img.icons8.com/color/50/000000/twitter-circled.png"/></i></i></a>
       <a href="https://linkedin.com/in/${user.linkedinID}"> <img src="https://img.icons8.com/color/48/000000/linkedin-circled.png"/></i></a>
     </div>
-  </figcaption>
+    </figcaption>
   </div>
 `;
 }
-
+let userRender = [];
 document.getElementById("app").innerHTML = `
 ${userData.map(userCard).join("")}
 `;
+//onClick
+let inputField = document.getElementById("inputField");
+let inputText = inputField.value;
+inputField.addEventListener("input", () => {
+  inputText = inputField.value;
+  SearchFxn();
+});
+//onInput
+let btn = document.getElementById("btn");
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  inputText = inputField.value;
+  SearchFxn();
+});
+//function to filter out
+function SearchFxn() {
+  userRender = [];
+  userData.map((user, i) => {
+    let name = user.userName;
+    name = name.toLowerCase();
+    if (name.includes(inputText)) {
+      userRender = [...userRender, user];
+      userRender = [...new Set(userRender)];
+    }
+  });
+  document.getElementById("app").innerHTML = `
+${userRender.map(userCard).join("")}
+`;
+}

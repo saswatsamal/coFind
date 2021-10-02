@@ -22,6 +22,5 @@ const userData = [
         userBio:"A student developer who always opens to learn and explore new technologies. Loves hackathons.",
         linkedinID: "arpan-aditya",
         twitterID: "adityaa_sahoo",
-    },
-    
+    }
 ];
