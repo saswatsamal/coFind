@@ -273,7 +273,13 @@ form{
   width:18%;
 }
 .profile-card p{
+  max-width:100%;
+  margin:0;
+  margin-top:0.5%;
+  margin-bottom:1%;
+  flex-wrap:wrap;
   font-size:12px;
+  text-align:center;
 }
 .footer{
   width: 100%;
