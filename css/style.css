@@ -148,6 +148,37 @@ transform: scale(1.1);
 }
 
 
+/* Search Bar */
+form{
+ 
+  display: flex;
+  position: relative;
+}
+
+.search-icon{
+  position: absolute;
+  top: 0.2rem;  
+  right: 0.2rem;
+  background:#000000ed;
+  fill: #fff;
+  border-radius:5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+#inputField{
+  font-family: 'Poppins',sans;
+  background: #fff;
+  border: 0px;
+  border-radius: 5rem;
+  padding: 0.8rem 2.5rem 0.8rem 1rem;
+
+}
+
+#inputField:focus{
+ outline: none;
+}
+
 .header{
   display: flex;
   flex-direction: column;
