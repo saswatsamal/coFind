@@ -101,12 +101,12 @@ transform: scale(1.1);
 }
 
 .title{
-  font-size: 5em;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
 .heading p{
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: #33d6a6;
   text-decoration: underline;
   text-decoration-style: wavy;
@@ -264,6 +264,11 @@ transform: scale(1.1);
 .footer-text a:hover{
   color:#ff8c37;
 }
+.landing-page img{
+  width:15%;
+  height:15%;
+}
+
 
 
 /* Media Queries */
