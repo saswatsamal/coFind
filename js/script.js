@@ -133,22 +133,23 @@ let btn = document.getElementById("btn");
 btn.addEventListener("click", (e) => {
   e.preventDefault();
   inputText = inputField.value;
-  SearchFxn();
+  if(inputText == null || inputText == "")
+    alert("Please write something to proceed!")
+  else
+    SearchFxn();
 });
 //function to filter out
 function SearchFxn() {
   userRender = [];
   userData.map((user, i) => {
-    let tag = user.userDesignation;
-    let name = user.userName;
-    name = name.toLowerCase();
-    tag = tag.toLowerCase();
+    let tag = user.userDesignation.toLowerCase();
+    let name = user.userName.toLowerCase();
     if (name.includes(inputText) || tag.includes(inputText)) {
       userRender = [...userRender, user];
       userRender = [...new Set(userRender)];
     }
   });
-  document.getElementById("app").innerHTML = `
-${userRender.map(userCard).join("")}
-`;
+  document.getElementById("app").innerHTML = `${userRender.map(userCard).join("")}`;
+  if(userRender.length == 0)
+    document.getElementById("app").innerHTML = "<h3>No Results Found!</h3>"
 }

@@ -47,5 +47,13 @@ const userData = [
         userBio:"A budding Web Developer and an Open Source Enthusiast, who is obsessed with the idea of improving myself with THE POWER OF COMMUNITY",
         linkedinID: "abhijeet-anand-666123200",
         twitterID: "abhijeet_500",
+    },
+    {
+        userName: "Samarjeet Banik",
+        userImage: "https://avatars.githubusercontent.com/u/44737783?v=4",
+        userDesignation: "Web Developer & Tester",
+        userBio:"Just a regular student who loves coding, testing and photography as well. Learning and helping others, makes me happy.",
+        linkedinID: "samarjeet-banik",
+        twitterID: "banik_samarjeet",
     }
 ];
