@@ -24,6 +24,7 @@ body {
 a{
   text-decoration: none;
   color: #413c0e;
+  margin-top: 10px;
 }
 
 .float-square{
@@ -132,6 +133,7 @@ transform: scale(1.1);
   padding: 8px;
   cursor: pointer;
   font-weight: 800;
+  margin: 0;
 }
 .back-btn:hover {
   background-color: #2934409c;
