@@ -53,9 +53,9 @@ a{
 
 .navbar-logo{
   display: inline-block;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
-  margin-right: 1.5rem;
+  position: absolute;
+  top: 12px;
+  left: 0;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
@@ -67,7 +67,8 @@ a{
 }
 
 .navbar-add{
- position: absolute;
+ /*position: absolute;*/
+ position: inherit;
  right: 2em;  
 }
 
@@ -288,11 +289,10 @@ form{
 
 /* Media Queries */
 @media only screen and (max-width: 1070px) {
-  .navbar-logo{
-    display: none;
-  }
+   
   .navbar-add{
     font-size: 1rem;
+    padding: 5px 5px 5px 5px;
   }
   .landing-page img{
     width: 100px;
