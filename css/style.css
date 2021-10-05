@@ -55,8 +55,8 @@ a{
 .navbar-logo{
   display: inline-block;
   position: absolute;
-  top: 12px;
-  left: 0;
+  top: 8px;
+  left: 22px;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
@@ -68,7 +68,7 @@ a{
 }
 
 .navbar-add{
- /*position: absolute;*/
+ margin:0;
  position: inherit;
  right: 2em;  
 }
@@ -152,6 +152,7 @@ form{
   border: 0px;
   border-radius: 5rem;
   font-size: 18px;
+  width: 150px;
   padding: 0.6rem 1rem 0.6rem 3.5rem;
   
 }
